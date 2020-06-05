@@ -9,13 +9,36 @@
 </head>
 
 <body>
+    <header>
+        <!-- Dropdown -->
+        <div class="dropdown">
+            <button id="dropdown-btn">Menu</button>
+            <ul id="dropdown-list">
+                <li>About</li>
+                <li>Our Work</li>
+                <li>Projects</li>
+                <li>FAQ</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <!-- Modal -->
+        <button id="modal-btn" class="button">Subscribe</button>
 
-    <button id="modal-btn" class="button">Click Here</button>
-
-    <div id="simple-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <p>Hello from the Modal!</p>
+        <div id="simple-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <p>Hello from the Modal!</p>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="range-slider-container">
+            <p class="range-text">How would you rate us?</p>
+            <input type="range" min="1" max="10" value="1" id="range-slider" class="range-slider">
+            <p>Rate us:
+                <br>
+                <span id="range-output"></span>
+            </p>
         </div>
     </div>
 
